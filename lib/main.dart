@@ -9,6 +9,7 @@ class MyApp extends StatelessWidget {
 
   // This widget is the root of your application.
   @override
+
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
@@ -22,8 +23,10 @@ class MyApp extends StatelessWidget {
                          Expanded(
                            flex: 1,
                            child:Container(
+                              decoration: const BoxDecoration(
+                                  color: Colors.red
+                              ),
 
-                               color: Colors.red
 
                            ),
                          ),
@@ -130,7 +133,7 @@ class MyApp extends StatelessWidget {
 
                    ],
                  ))),
-              Expanded(child:Container(child:Row(
+              Expanded(child:Row(
                    children: [
                      Expanded(
                        flex: 3,
@@ -177,7 +180,7 @@ class MyApp extends StatelessWidget {
                      )
 
                    ],
-                 )))
+                 ))
 
            ],
          ),
